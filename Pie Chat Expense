@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+expense = [100, 65, 490, 150, 400, 300] #creating expense
+labels = ['Fuel:100', 'Insurance :65', ' Rent:490', 'C tax:150', 'Other :400', 'Savings:300'] #creating Labels
+
+colors = sns.color_palette('pastel') [0: 6] # defining colors and index slicing
+
+plt.pie(expense, labels=labels, colors= colors, autopct='%.0f%%') # Specifying type of chat 'pie'
+
+plt.title('My Expenses') #Adding tittle 
+plt.show() # Calling the function
